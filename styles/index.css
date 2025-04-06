@@ -1,0 +1,21 @@
+.header-bar {
+  display: flex;
+  padding: 1vh;
+}
+.header-empty {
+  width: 66%;
+}
+.header-buttons {
+  display: flex;
+  order: 2;
+  width: 34%;
+  justify-content: space-evenly;
+}
+.main-container {
+  display: grid;
+  grid-template-rows: 95vh 95vh 95vh;
+}
+.home-box {
+  background-color: aliceblue;
+  align-content: center;
+}
