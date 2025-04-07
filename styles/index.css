@@ -14,8 +14,13 @@
 .main-container {
   display: grid;
   grid-template-rows: 95vh 95vh 95vh;
+  grid-template-columns: 1fr;
 }
 .home-box {
   background-color: aliceblue;
   align-content: center;
+  border: none;
+}
+.projects-box {
+  background-color: aliceblue;
 }
