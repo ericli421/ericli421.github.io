@@ -1,15 +1,32 @@
+@font-face {
+  font-family: "Connection II";
+  src: url("../assets/fonts/connectionii.otf") format("opentype");
+}
+
 .header-bar {
   display: flex;
   padding: 1vh;
 }
 .header-empty {
-  width: 66%;
+  width: 60%;
 }
-.header-buttons {
+.header-buttons-box {
   display: flex;
   order: 2;
-  width: 34%;
-  justify-content: space-evenly;
+  width: 40%;
+  justify-content: right;
+}
+.header-button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5vh 1vw;
+  font-family: "Connection II", sans-serif;
+  text-decoration: none;
+  margin-left: 2%;
+  box-shadow: 3px 3px 0px black;
 }
 .main-container {
   display: grid;
