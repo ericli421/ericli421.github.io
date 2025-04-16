@@ -1,0 +1,78 @@
+/* These two fonts are currently unused. They were considered at some point but were not used in the final design. They are kept here for reference and potential future use. */
+@font-face {
+  font-family: "Connection II";
+  src: url("../assets/fonts/connectionii.otf") format("opentype");
+}
+@font-face {
+  font-family: "Joystix Monospace";
+  src: url("../assets/fonts/joystix-monospace.otf") format("opentype");
+}
+/* Current font */
+@font-face {
+  font-family: "OS X Darwin";
+  src: url("../assets/fonts/os_x_darwin.ttf") format("truetype");
+}
+/* Site wide */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "OS X Darwin", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Connection II", sans-serif;
+  margin: 0;
+}
+h3 {
+  font-family: "Connection II", sans-serif;
+  margin: 0;
+}
+
+/* Beginning of structure */
+.header-bar {
+  display: flex;
+  padding: 1vh;
+}
+.header-empty {
+  width: 60%;
+}
+.header-buttons-box {
+  display: flex;
+  order: 2;
+  width: 40%;
+  justify-content: right;
+}
+.header-button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5vh 1vw;
+  text-decoration: none;
+  margin-left: 2mm;
+  box-shadow: 3px 3px 0px black;
+  position: relative;
+}
+.header-button:hover {
+  background-color: rgb(220, 220, 220);
+  transition-duration: 15ms;
+}
+.header-button:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: 1px 1px 0px black;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.summary-box {
+  background-color: aliceblue;
+  align-content: center;
+  border: none;
+}
+.projects-box {
+  background-color: aliceblue;
+}
