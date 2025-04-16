@@ -2,6 +2,9 @@
   font-family: "Connection II";
   src: url("../assets/fonts/connectionii.otf") format("opentype");
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .header-bar {
   display: flex;
@@ -27,6 +30,16 @@
   text-decoration: none;
   margin-left: 2%;
   box-shadow: 3px 3px 0px black;
+  position: relative;
+}
+.header-button:hover {
+  background-color: rgb(220, 220, 220);
+  transition-duration: 15ms;
+}
+.header-button:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: 1px 1px 0px black;
 }
 .main-container {
   display: grid;
