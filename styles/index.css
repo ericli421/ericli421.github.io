@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Joystix Monospace", sans-serif;
+  font-family: "Connection II", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -28,8 +28,14 @@ h1 {
   font-family: "OS X Darwin", sans-serif;
   margin: 0;
 }
-h3 {
-  font-family: "Connection II", sans-serif;
+
+h2 {
+  font-size: 2vw;
+  font-family: "Joystix Monospace", sans-serif;
+  margin: 0;
+}
+h3,
+p {
   margin: 0;
 }
 
@@ -45,6 +51,7 @@ h3 {
   overflow: hidden;
 }
 .header-bar {
+  font-family: "Joystix Monospace", sans-serif;
   display: flex;
   position: sticky;
   padding: 1vh;
@@ -123,4 +130,34 @@ h3 {
 
 .projects-box {
   background-color: aliceblue;
+}
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.socials-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  transition: 0.25s;
+  margin-bottom: 20px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.social-icon:active {
+  transform: scale(1.05);
 }
