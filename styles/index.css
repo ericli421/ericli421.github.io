@@ -1,8 +1,9 @@
-/* These two fonts are currently unused. They were considered at some point but were not used in the final design. They are kept here for reference and potential future use. */
+/* Text font */
 @font-face {
   font-family: "Connection II";
   src: url("../assets/fonts/connectionii.otf") format("opentype");
 }
+/* Button font */
 @font-face {
   font-family: "Joystix Monospace";
   src: url("../assets/fonts/joystix-monospace.otf") format("opentype");
@@ -17,11 +18,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "OS X Darwin", sans-serif;
+  font-family: "Joystix Monospace", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 h1 {
-  font-size: 4rem;
-  font-family: "Connection II", sans-serif;
+  font-size: 5vw;
+  font-family: "OS X Darwin", sans-serif;
   margin: 0;
 }
 h3 {
@@ -30,26 +34,42 @@ h3 {
 }
 
 /* Beginning of structure */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 .header-bar {
   display: flex;
+  position: sticky;
   padding: 1vh;
+  background-color: silver;
 }
-.header-empty {
-  width: 60%;
+.home-box,
+.blog-box,
+.projects-box {
+  width: 100%;
+  height: 95vh;
 }
+
 .header-buttons-box {
   display: flex;
   order: 2;
-  width: 40%;
+  width: 100%;
   justify-content: right;
 }
 .header-button {
   background-color: white;
   border: 2px solid black;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
-  padding: 0.5vh 1vw;
+  padding: 5px 10px;
   text-decoration: none;
   margin-left: 2mm;
   box-shadow: 3px 3px 0px black;
@@ -64,16 +84,43 @@ h3 {
   left: 2px;
   box-shadow: 1px 1px 0px black;
 }
-.main-container {
-  display: grid;
-  grid-template-rows: 95vh 95vh 95vh;
-  grid-template-columns: 1fr;
-}
+
 .home-box {
-  background-color: aliceblue;
-  align-content: center;
+  display: flex;
+  align-items: center;
   border: none;
+  overflow-y: auto;
+  flex-direction: row;
+  justify-content: right;
 }
+
+.home-background {
+  background-image: url("../assets/images/capybass.png"); /*Filler image*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  filter: blur(8px);
+}
+
+.home-text-box {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 4px solid black;
+  box-shadow: 1px 1px 2px black;
+  max-width: 600px;
+  margin-right: 40px;
+  text-align: center;
+}
+.home-text {
+  margin-bottom: 20px;
+}
+
 .projects-box {
   background-color: aliceblue;
 }
