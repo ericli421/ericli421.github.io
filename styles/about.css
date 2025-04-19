@@ -18,10 +18,11 @@ html {
 }
 body {
   font-family: "OS X Darwin", sans-serif;
+  margin: 0;
 }
 h1 {
   font-size: 4rem;
-  font-family: "Connection II", sans-serif;
+  font-family: "OS X Darwin", sans-serif;
   margin: 0;
 }
 h3 {
@@ -30,49 +31,27 @@ h3 {
 }
 
 /* Beginning of structure */
-.header-bar {
-  display: flex;
-  padding: 1vh;
-}
-.header-empty {
-  width: 60%;
-}
-.header-buttons-box {
-  display: flex;
-  order: 2;
-  width: 40%;
-  justify-content: right;
-}
-.header-button {
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5vh 1vw;
-  text-decoration: none;
-  margin-left: 2mm;
-  box-shadow: 3px 3px 0px black;
-  position: relative;
-}
-.header-button:hover {
-  background-color: rgb(220, 220, 220);
-  transition-duration: 15ms;
-}
-.header-button:active {
-  top: 2px;
-  left: 2px;
-  box-shadow: 1px 1px 0px black;
-}
-.main-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.summary-box {
-  background-color: aliceblue;
-  align-content: center;
-  border: none;
-}
+.summary-box,
+.skills-box,
+.education-box,
 .projects-box {
-  background-color: aliceblue;
+  width: 100%;
+  height: 95vh;
+}
+
+.summary-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0ff;
+}
+.summary-text-box {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 4px solid black;
+  box-shadow: 1px 1px 2px black;
+  max-width: 60%;
+  margin-right: 40px;
+  text-align: center;
 }

@@ -50,13 +50,7 @@ p {
   padding: 0;
   overflow: hidden;
 }
-.header-bar {
-  font-family: "Joystix Monospace", sans-serif;
-  display: flex;
-  position: sticky;
-  padding: 1vh;
-  background-color: silver;
-}
+
 .home-box,
 .blog-box,
 .projects-box {
@@ -64,41 +58,14 @@ p {
   height: 95vh;
 }
 
-.header-buttons-box {
-  display: flex;
-  order: 2;
-  width: 100%;
-  justify-content: right;
-}
-.header-button {
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  font-size: 1.25rem;
-  cursor: pointer;
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-left: 2mm;
-  box-shadow: 3px 3px 0px black;
-  position: relative;
-}
-.header-button:hover {
-  background-color: rgb(220, 220, 220);
-  transition-duration: 15ms;
-}
-.header-button:active {
-  top: 2px;
-  left: 2px;
-  box-shadow: 1px 1px 0px black;
-}
-
 .home-box {
   display: flex;
   align-items: center;
   border: none;
-  overflow-y: auto;
+  overflow-y: hidden;
   flex-direction: row;
   justify-content: right;
+  border: solid 2px black;
 }
 
 .home-background {
@@ -108,11 +75,10 @@ p {
   background-position: center;
   position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: 100vh;
   z-index: -1;
   filter: blur(8px);
+  overflow: hidden;
 }
 
 .home-text-box {
@@ -127,37 +93,10 @@ p {
 .home-text {
   margin-bottom: 20px;
 }
+.blog-box {
+  background-color: darkcyan;
+}
 
 .projects-box {
   background-color: aliceblue;
-}
-
-.contact-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.socials-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 0px;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  transition: 0.25s;
-  margin-bottom: 20px;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-.social-icon:active {
-  transform: scale(1.05);
 }

@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My website description" />
     <link rel="stylesheet" href="styles/index.css" />
-
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <title>Eric Li</title>
   </head>
   <body>
     <div class="main-container">
-      <div class="header-bar">
-        <div class="header-buttons-box">
-          <a href="#" class="header-button">Home</a>
-          <a href="pages/about.html" class="header-button">About</a>
-          <a href="pages/blog.html" class="header-button">Blog</a>
-          <a href="pages/projects.html" class="header-button">Projects</a>
-          <a href="#contact" class="header-button">Contact Me</a>
-        </div>
+      <div class="header-bar" . id="header-placeholder">
+        <script>
+          fetch("components/header-bar.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("header-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading header-bar:", error)
+            );
+        </script>
       </div>
 
       <div class="home-box">
@@ -44,46 +48,17 @@
       </div>
 
       <!-- Later on, this section should be gone and replaced with a reusable element (since it's used everywhere) -->
-      <div class="contact-area">
-        <h2 id="contact" style="margin-bottom: 20px; margin-top: 40px">
-          Contact Me
-        </h2>
-        <p>Email: lieric421@gmail.com</p>
-        <p style="margin-bottom: 40px">Phone: +1 (819)-576-6180</p>
-        <h2>My socials</h2>
-        <div class="socials-box">
-          <a
-            href="https://www.linkedin.com/in/eric-li-3277262b1/"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/linkedin.svg"
-              alt="LinkedIn"
-              class="social-icon"
-            />
-          </a>
-          <a href="https://github.com/ericli421" target="_blank">
-            <img
-              src="assets/icons/github-dark.svg"
-              alt="GitHub"
-              class="social-icon"
-            />
-          </a>
-          <a href="https://www.instagram.com/ericli.421/" target="_blank">
-            <img
-              src="assets/icons/instagram-bordered.svg"
-              alt="Instagram"
-              class="social-icon"
-            />
-          </a>
-          <a href="mailto:lieric421@gmail.com" target="_blank"
-            ><img
-              src="assets/icons/email-closed.svg"
-              alt="Email Me"
-              class="social-icon"
-            />
-          </a>
-        </div>
+      <div class="contact-area" , id="contact-placeholder">
+        <script>
+          fetch("components/contact-area.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("contact-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading contact-area:", error)
+            );
+        </script>
       </div>
     </div>
   </body>
