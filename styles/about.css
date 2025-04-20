@@ -25,6 +25,10 @@ h1 {
   font-family: "OS X Darwin", sans-serif;
   margin: 0;
 }
+h2 {
+  font-size: 3rem;
+  font-family: "Joystix Monospace";
+}
 h3 {
   font-family: "Connection II", sans-serif;
   margin: 0;
@@ -54,4 +58,21 @@ h3 {
   max-width: 60%;
   margin-right: 40px;
   text-align: center;
+}
+.skills-box {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.skills-languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skills-languages-box {
+  padding: 20px;
+}
+.skills-languages-icon {
+  width: 40px;
+  height: 40px;
 }
