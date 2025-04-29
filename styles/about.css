@@ -26,12 +26,20 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Joystix Monospace";
-  justify-self: center;
+  margin: 0;
 }
 h3 {
+  margin: 0;
+  font-size: 2.15rem;
+}
+h4 {
   font-family: "Connection II", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+p {
   margin: 0;
 }
 
@@ -73,13 +81,18 @@ h3 {
   justify-items: center;
   text-align: center;
 }
+.skills-section {
+  margin-top: 30px;
+}
 .skills-languages {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .skills-languages-box {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 .skills-languages-icon {
   width: 40px;
@@ -90,4 +103,52 @@ h3 {
 }
 .education-school-icon {
   width: 80px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  font-family: "OS X Darwin", sans-serif;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-style: double;
+  border-color: black;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content p {
+  color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+  background-color: #efefef;
+}
+.dropdown-content p:hover {
+  background-color: #fafafa;
 }

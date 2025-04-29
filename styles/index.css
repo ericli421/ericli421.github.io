@@ -52,7 +52,7 @@ p {
 }
 
 .home-box,
-.blog-box,
+/* .blog-box, */
 .projects-box {
   width: 100%;
   height: 95vh;
