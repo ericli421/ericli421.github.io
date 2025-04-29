@@ -37,7 +37,7 @@ h3 {
 h4 {
   font-family: "Connection II", sans-serif;
   font-size: 20px;
-  margin: 10px;
+  margin: 0;
 }
 p {
   margin: 0;
@@ -70,7 +70,7 @@ p {
 .competency-box {
   display: flex;
   flex-direction: row;
-  background-color: aqua;
+  background: #e0e0e0;
 }
 .skills-box,
 .education-box {
@@ -99,12 +99,44 @@ p {
   height: 40px;
 }
 .education-box {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education-school {
+  margin-top: 50px;
+  display: flex;
 }
 .education-school-icon {
-  width: 80px;
+  width: clamp(50px, 95%, 120px);
+  height: auto;
 }
 
+.education-school-icon-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  border: double black;
+  margin-right: 40px;
+  width: clamp(50px, 100%, 120px);
+  height: 100%;
+  aspect-ratio: 1/1;
+  box-shadow: 1px 1px 2px black;
+}
+
+.education-school-box {
+  display: flex;
+  align-items: center;
+}
+
+.education-school-info-frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  height: auto;
+  flex-grow: 1;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -130,6 +162,7 @@ p {
   overflow-y: auto;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border: solid black 1px;
 }
 
 .dropdown-content a,
@@ -148,7 +181,4 @@ p {
 /* Change link color on hover */
 .dropdown-content a:hover {
   background-color: #efefef;
-}
-.dropdown-content p:hover {
-  background-color: #fafafa;
 }
