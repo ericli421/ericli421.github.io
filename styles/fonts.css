@@ -1,0 +1,45 @@
+/* These two fonts are currently unused. They were considered at some point but were not used in the final design. They are kept here for reference and potential future use. */
+@font-face {
+  font-family: "Connection II";
+  src: url("../assets/fonts/connectionii.otf") format("opentype");
+}
+@font-face {
+  font-family: "Joystix Monospace";
+  src: url("../assets/fonts/joystix-monospace.otf") format("opentype");
+}
+/* Current font */
+@font-face {
+  font-family: "OS X Darwin";
+  src: url("../assets/fonts/os_x_darwin.ttf") format("truetype");
+}
+/* Site wide */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "OS X Darwin", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 10rem;
+  font-family: "OS X Darwin", sans-serif;
+  margin: 0;
+}
+h2 {
+  font-size: 4rem;
+  font-family: "Joystix Monospace";
+  margin: 0;
+}
+h3 {
+  margin: 0;
+  font-size: 2.15rem;
+}
+h4 {
+  font-family: "Connection II", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: 20px;
+}

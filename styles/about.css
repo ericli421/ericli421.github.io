@@ -1,48 +1,6 @@
-/* These two fonts are currently unused. They were considered at some point but were not used in the final design. They are kept here for reference and potential future use. */
-@font-face {
-  font-family: "Connection II";
-  src: url("../assets/fonts/connectionii.otf") format("opentype");
-}
-@font-face {
-  font-family: "Joystix Monospace";
-  src: url("../assets/fonts/joystix-monospace.otf") format("opentype");
-}
-/* Current font */
-@font-face {
-  font-family: "OS X Darwin";
-  src: url("../assets/fonts/os_x_darwin.ttf") format("truetype");
-}
-/* Site wide */
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "OS X Darwin", sans-serif;
-  margin: 0;
-}
-h1 {
-  font-size: 4rem;
-  font-family: "OS X Darwin", sans-serif;
-  margin: 0;
-}
-h2 {
-  font-size: 4rem;
-  font-family: "Joystix Monospace";
-  margin: 0;
-}
-h3 {
-  margin: 0;
-  font-size: 2.15rem;
-}
 h4 {
-  font-family: "Connection II", sans-serif;
-  font-size: 20px;
-  margin: 0;
+  padding-bottom: 20px;
 }
-p {
-  margin: 0;
-}
-
 /* Beginning of structure */
 .summary-box,
 .competency-box,
@@ -120,7 +78,7 @@ p {
   border: double black;
   margin-right: 40px;
   width: clamp(50px, 100%, 120px);
-  height: 100%;
+  height: auto;
   aspect-ratio: 1/1;
   box-shadow: 1px 1px 2px black;
 }
@@ -136,6 +94,7 @@ p {
   min-height: 120px;
   height: auto;
   flex-grow: 1;
+  align-content: stretch;
 }
 .dropdown {
   position: relative;

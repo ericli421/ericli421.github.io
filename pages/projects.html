@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <link rel="stylesheet" href="../styles/projects.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="header-bar" id="header-placeholder">
+        <script>
+          fetch("/components/header-bar.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("header-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading header-bar:", error)
+            );
+        </script>
+      </div>
+      <div class="contact-area" id="contact-placeholder">
+        <script>
+          fetch("/components/contact-area.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("contact-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading contact-area:", error)
+            );
+        </script>
+      </div>
+    </div>
+  </body>
 </html>
