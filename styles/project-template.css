@@ -1,0 +1,131 @@
+.project-flexbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.project-left-empty,
+.project-right-empty {
+  width: 100%;
+}
+h2 {
+  font-family: "Joystix Monospace", sans-serif;
+  padding: 0;
+}
+h5 {
+  font-family: "Connection II", sans-serif;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+}
+h6 {
+  font-family: "Connection II", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+p {
+  font-family: "Connection II", sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Headlines area */
+
+.project-headlines-area {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items at the top */
+}
+.project-headline-text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-skills-and-links-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.project-skills-used,
+.project-links {
+  width: 50%;
+}
+.project-skills-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+}
+.project-skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.project-skill-icon > p {
+  font-size: 12px;
+}
+
+.skills-icon {
+  width: 40px;
+  height: auto;
+}
+.project-link-icon {
+  width: 50px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.project-image-area {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-description-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.project-description-area > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-page-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.project-full-page-image {
+  width: 60%;
+  height: auto;
+}
+.image-subtitle {
+  font-size: 13px;
+  justify-self: left;
+  text-align: left;
+  margin-top: 10px;
+}

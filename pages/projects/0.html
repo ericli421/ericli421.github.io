@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Portfolio Website</title>
+
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/project-template.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-bar" id="header-placeholder">
+        <script>
+          fetch("/components/header-bar.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("header-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading header-bar:", error)
+            );
+        </script>
+      </div>
+
+      <div class="project-flexbox">
+        <div class="project-left-empty"></div>
+        <div class="project-area">
+          <div class="project-headlines-area">
+            <div class="project-headline-text-area">
+              <div class="project-title-area">
+                <h2>Personal Portfolio Website 1.0</h2>
+                <h4>
+                  Designed and developped a static personal portfolio website
+                  from scratch, the one you're on right now! Worked exclusively
+                  on Frontend using HTML, CSS and a tiny bit of Javascript.
+                </h4>
+                <h6>Project Duration: 2025/04/03 -- 2025/05/dd</h6>
+              </div>
+              <div class="project-skills-and-links-area">
+                <div class="project-skills-used">
+                  <h5>Skills Developed</h5>
+                  <div class="project-skills-icons">
+                    <div class="project-skill-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML"
+                        class="skills-icon"
+                        title="HTML"
+                      />
+                      <p>HTML</p>
+                    </div>
+                    <div class="project-skill-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS"
+                        class="skills-icon"
+                        title="CSS"
+                      />
+                      <p>CSS</p>
+                    </div>
+
+                    <div class="project-skill-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                        alt="Git"
+                        class="skills-icon"
+                        title="Git"
+                      />
+                      <p>Git</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-links">
+                  <h5>Project Links</h5>
+                  <div class="project-link-icon">
+                    <a
+                      href="https://github.com/ericli421/portfolio-webpage"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/icons/github-dark.svg"
+                        alt="Source code"
+                        title="Source code"
+                        class="project-link-icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-image-area">
+              <img
+                src="/assets/images/project-images/website-sketches.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <p class="image-subtitle">Website's Initial sketches</p>
+            </div>
+          </div>
+
+          <div class="project-description-area">
+            <p>
+              The reason I chose computer science is because I wanted to create
+              cool stuff. Making personal projects is a way I have to make cool
+              stuff. I had the idea of making a portfolio website after
+              attending a presentation at my university about making personal
+              projects, in which a website was the two presenters' common
+              project. I chose it as my first project in computer science after
+              a lot of deabte, as it's a classic computer science project, and
+              opens an area for me to showcase my future projects. As such, on
+              April 3rd 2025, I started working on this project.
+            </p>
+
+            <p>
+              My first priority was to make a bunch of design decisions. As
+              someone who had zero web development experience, I was immediately
+              intimidated by the amount of different options I was presented
+              with for everything. I settled on writing everything from scratch
+              using HTML/CSS, as this way, I can focus on the very fundamentals
+              I needed work on. I chose to host the final website on GitHub
+              Pages, as it was free for me and on a platform I was already
+              using, and had all the features I needed.
+            </p>
+            <p>
+              After that, I started making a project plan. My initial plan
+              included a home page that mostly featured the latest highlights,
+              an about section with a more detailed view of who I am, a Blog
+              section where I would post updates that aren't related to computer
+              science, a Project section that would eventually become an
+              Experience section where I would post updates that are related to
+              Computer Science and professional development as a whole, and a
+              Contact Page, so that anyone can contact me. I also put in a lot
+              of very ambitious ideas, such as an entire system to post new
+              blog/project posts, a chibi character that runs around while
+              you're on the website, and a background video that I would edit
+              onto the home page that would look super cinematic. Most of those
+              got scrapped from the initial release, but may be featured when I
+              get the motivation/experience needed to work on my website 2.0
+            </p>
+            <p>
+              The choice to make it a pixel art theme came pretty early on. I am
+              personally a big fan of pixel art, as I find a certain charm to
+              it. It's a situation similar to how people love
+              <a href="https://en.wikipedia.org/wiki/Pointillism"
+                >Pointillism</a
+              >
+              art. It would also give my website a more personal style, as pixel
+              art is not a theme I saw on many portfolio websites. It might also
+              have been
+              <a href="https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect"
+                >sunk-cost fallacy</a
+              >
+              getting to me, as I had purchased a
+              <a href="https://www.aseprite.org/">pixel art software</a> two
+              weeks before I began this project and never used it.
+            </p>
+            <div class="project-page-image">
+              <img
+                src="/assets/images/project-images/celeste-sj-bhs-ending.png"
+                alt="A screenshot from Celeste's Strawberry Jam mod"
+                class="project-full-page-image"
+              />
+              <p class="image-subtitle">
+                Ending of a level from the mod
+                <a href="https://gamebanana.com/mods/424541">Strawberry Jam</a>
+                for the game <a href="https://www.celestegame.com/">Celeste</a>,
+                one of my favorite scenes in any video game
+              </p>
+            </div>
+            <p>
+              After that, I started learning. I spent 2 days watching HTML/CSS
+              tutorials on youtube before I realized it was a bit of a waste of
+              time past the first 3 hours and decided to take a more hands on
+              approach. During that time, I set up my IDE (<a
+                href="https://code.visualstudio.com/"
+                >Visual Studio Code</a
+              >) for web development and learned that I didn't need to learn
+              much JavaScript to accomplish 90% of the goals I set for myself
+              for my website, which was a bit of a relief.
+            </p>
+
+            <p>
+              Progress went by pretty quick at first. Within the first week, I
+              wrote HTML skeletons for the home page and about page, and had
+              made some very nice looking styling. I also started searching for
+              the fonts that I would use in the website, and eventually settled
+              on three:
+              <a href="https://www.dafont.com/connection-ii.font"
+                >Connection II</a
+              >, which resembles the minecraft font a lot,
+              <a href="https://www.dafont.com/osxdarwin.font">OS X Darwin</a>,
+              which ressembles more what you find on a more classic arcade, and
+              <a href="https://www.dafont.com/joystix.font">Joystix</a>, which
+              also ressembled an arcade font, but gave different vibes. Although
+              they ended up swapping a bunch, I decided to use Joystix for major
+              titles, OS X Darwin for non-title text that were still kinda
+              important, and Connection II for general text.
+            </p>
+            <p>
+              Soon however, progress started slowing down. There were two major
+              reasons for that. First, I chose my timing extremely poorly as I
+              had started this project right before final exam season, so I had
+              to shift my focus onto my exams, and focus on moving out
+              afterwards, as I was living in university residences. Second, I
+              got stuck with a lot of artistic decisions such as choosing color
+              schemes, picking how to place images and balancing all the
+              artistic decisions with my capabilities as a web developper.
+              Therefore, during the second half of April, I made very little
+              progress on this website
+            </p>
+            <p>
+              Eventually however, all of those were over, but by then, a month
+              had passed since I started this project. During that month, I got
+              other smaller project ideas I wanted to work on, other concepts
+              and tools I wanted to learn, which ultimately sapped my motivation
+              of remaining on this project. This is around when I decided to
+              scrap pretty much all my most ambitious ideas and shelve them for
+              a later date, and why this project is titled "Personal Website
+              1.0". With a much smaller scope, I worked on finishing the last
+              details before I would release my website officially. I drew the
+              contact icons in my pixel art software to add them at the bottom
+              in the contact area, I finished the entirety of the About section
+              and most of the homepage, and I properly reformatted my file
+              structures to make them easier to modify in the future.
+            </p>
+
+            <p>
+              And with that, and a long time making more thematic decisions, I
+              released the website to the world, which is where you're reading
+              this text right now! I hope you enjoyed reading through my journey
+              of making this website!
+            </p>
+          </div>
+        </div>
+        <div class="project-right-empty"></div>
+      </div>
+
+      <div class="contact-area" id="contact-placeholder">
+        <script>
+          fetch("/components/contact-area.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("contact-placeholder").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading contact-area:", error)
+            );
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

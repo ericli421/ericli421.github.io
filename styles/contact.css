@@ -1,9 +1,21 @@
+.contact-area > h1,
+.contact-area > h2,
+.contact-area > h3,
+.contact-area > h4,
+.contact-area > h5,
+.contact-area > h6,
+.contact-area > p {
+  color: white;
+  text-shadow: -2px 4px 0px rgba(255, 255, 255, 0.2);
+}
+
 .contact-area {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50vh;
+  background-color: black;
 }
 .socials-box {
   display: flex;
