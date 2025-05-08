@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/projects-display.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <title>Eric Li</title>
   </head>
@@ -44,13 +45,19 @@
         <a href="blog.html">See all blog posts</a>
       </div> -->
 
-      <div class="projects-box">
-        <h2>My Projects</h2>
-        <p>To be built</p>
-        <a href="pages/projects.html">See all projects</a>
+      <div class="projects-box" id="projects-display">
+        <script>
+          fetch("/components/projects-display.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("projects-display").innerHTML = html;
+            })
+            .catch((error) =>
+              console.error("Error loading projects-display:", error)
+            );
+        </script>
       </div>
 
-      <!-- Later on, this section should be gone and replaced with a reusable element (since it's used everywhere) -->
       <div class="contact-area" id="contact-placeholder">
         <script>
           fetch("components/contact-area.html")
