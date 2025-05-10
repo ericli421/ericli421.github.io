@@ -31,7 +31,7 @@
 }
 
 .home-background {
-  background-image: url("/assets/images/background-2.png"); /*Filler image*/
+  background-image: url("/assets/images/background-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

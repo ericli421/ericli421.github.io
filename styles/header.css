@@ -2,13 +2,15 @@
   font-family: "Joystix Monospace", sans-serif;
   display: flex;
   position: sticky;
-  padding: 1vh;
-  background-color: silver;
+  padding: 0.8vh;
+  background-color: rgb(134, 223, 216);
+  border-bottom: solid black 4px;
 }
 .header-buttons-box {
   display: flex;
   order: 2;
   width: 100%;
+  height: auto;
   justify-content: right;
   padding: 5px;
 }
