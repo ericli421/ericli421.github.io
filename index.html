@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
               document.getElementById("header-placeholder").innerHTML = html;
             })
             .catch((error) =>
-              console.error("Error loading header-bar:", error)
+              console.error("Error loading header-bar:", error),
             );
         </script>
       </div>
@@ -32,8 +32,13 @@
         <div class="home-text-box">
           <div class="home-text">
             <h1>Eric Li</h1>
-            <p style="font-size: 24px; font-family: 'OS X Darwin', sans-serif">
-              U1 Student in Computer Science at McGill University
+            <p
+              style="
+                font-size: 24px;
+                font-family: &quot;OS X Darwin&quot;, sans-serif;
+              "
+            >
+              U3 Student in Computer Science at McGill University
             </p>
           </div>
           <a href="pages/about.html" class="header-button">Learn more >></a>
@@ -54,7 +59,7 @@
               document.getElementById("projects-display").innerHTML = html;
             })
             .catch((error) =>
-              console.error("Error loading projects-display:", error)
+              console.error("Error loading projects-display:", error),
             );
         </script>
       </div>
@@ -67,7 +72,7 @@
               document.getElementById("contact-placeholder").innerHTML = html;
             })
             .catch((error) =>
-              console.error("Error loading contact-area:", error)
+              console.error("Error loading contact-area:", error),
             );
         </script>
       </div>
